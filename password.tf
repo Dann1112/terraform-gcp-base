@@ -1,4 +1,4 @@
-resource "random_string" "randomPass" {
+resource "random_string" "random_pass" {
   length      = 16
   upper       = true
   min_upper   = 5
@@ -9,6 +9,6 @@ resource "random_string" "randomPass" {
   special     = false
 }
 
-output "randomPass" {
+output "random_pass" {
   value = random_string.randomPass.result
 }
